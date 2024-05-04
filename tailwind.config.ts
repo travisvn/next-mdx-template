@@ -1,20 +1,43 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
+import defaultTheme from 'tailwindcss/defaultTheme'
+import colors from 'tailwindcss/colors'
+import typography from '@tailwindcss/typography'
 
 const config: Config = {
+  // darkMode: ['class'],
+  darkMode: ['class', '[data-theme="dark"]'],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./content/**/*.{js,ts,jsx,tsx,mdx}", // not so sure about this
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
+      typography: {
+        quoteless: {
+          css: {
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:first-of-type::after': { content: 'none' },
+          },
+        },
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [
+    typography,
+    require('@catppuccin/tailwindcss')({
+      // prefix to use, e.g. `text-pink` becomes `text-ctp-pink`.
+      // default is `false`, which means no prefix
+      prefix: 'ctp',
+      // which flavour of colours to use by default, in the `:root`
+      defaultFlavour: 'frappe',
+    }),
+  ],
+}
+
+export default config
