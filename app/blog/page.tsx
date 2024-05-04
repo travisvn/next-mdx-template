@@ -1,3 +1,9 @@
+/**
+ * 
+ * Optional page for separating posts from homepage
+ * 
+ */
+
 import BlogPosts from '@/components/posts'
 
 

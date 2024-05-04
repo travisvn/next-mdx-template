@@ -7,6 +7,7 @@ import { postUrl, siteConfig } from '@/config/site'
 
 import { unstable_noStore as noStore } from 'next/cache'
 
+
 export async function generateStaticParams() {
   let posts = getBlogPosts()
 
@@ -94,7 +95,7 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose max-w-none">
+      <article className="prose w-[90vw] md:w-prose">
         <CustomMDX source={post.content} />
       </article>
     </section>

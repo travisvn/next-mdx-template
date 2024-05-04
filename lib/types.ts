@@ -1,34 +1,3 @@
-/* Work-in-progress - experimenting with types and interfaces */
-export type PostMetadata = {
-  title?: string
-  publishedAt?: string
-  subtitle?: string
-  summary?: string
-  tags?: string[]
-}
-
-export interface PostData {
-  content?: string
-
-  slug?: string
-  [key: string]: any
-}
-
-export interface UnusedPostData {
-  coverImage?: string
-  ogImage?: {
-    url?: string
-  }
-  draft?: boolean
-  headliner?: boolean
-}
-
-export type PostComplete = PostMetadata & PostData & UnusedPostData
-
-export type PostTest = PostData & (PostMetadata | UnusedPostData)
-
-/* End WIP */
-
 export type PostType = {
   slug?: string
   title?: string

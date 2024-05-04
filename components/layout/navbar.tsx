@@ -9,12 +9,13 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className="flex flex-row mx-auto max-w-screen-lg w-full justify-between"
+        className="flex flex-row mx-auto justify-between w-full"
       >
-        <div className="text-ctp-rosewater font-bold text-2xl">
+        <div className="text-sky-600 font-bold text-2xl">
           <Link
             href='/'
-            className=''>
+            className=''
+          >
             {siteConfig.title}
           </Link>
         </div>

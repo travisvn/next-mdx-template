@@ -2,56 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* https://github.com/leerob/leerob.io/blob/main/app/global.css */
-
-/* ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
-}
-
-:root {
-  --sh-class: #e5c890;
-  --sh-identifier: #949cbb;
-  --sh-sign: #41916d;
-  --sh-property: #8caaee;
-  --sh-entity: #249a97;
-  --sh-jsxliterals: #6266d1;
-  --sh-string: #a6d189;
-  --sh-keyword: #ca9ee6;
-  --sh-comment: #949cbb;
-} */
-
-::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
-}
-
-/* :root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
-  --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
-  --sh-comment: #a19595;
-  --sh-jsxliterals: #6266d1;
-  --sh-property: #e25a1c;
-  --sh-entity: #e25a1c;
-} */
-
-/* Tried to copy the Obsidian syntax highlighting (which idk if Nord or Catpuccin variant) */
-/* :root {
-  --sh-identifier: #88c0d0;
-  --sh-keyword: #fa99cd;
-  --sh-string: #a3be8c;
-  --sh-class: #88c0d0;
-  --sh-property: #ebcb8b;
-  --sh-entity: #bf616a;
-  --sh-jsxliterals: #bf7db6;
-  --sh-sign: #88c0d0;
-  --sh-comment: #d8dee9;
-} */
-
-/* Second go, trying to use official Catpuccin palette */
 :root {
   --sh-identifier: #88c0d0;
   --sh-keyword: #ca9ee6;
@@ -64,20 +14,12 @@
   --sh-comment: #949cbb;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
-} */
-
 html {
-  min-width: 360px;
+  @apply selection:bg-sky-400 selection:text-white;
+}
+
+body {
+  @apply mx-3;
 }
 
 .prose .anchor {
@@ -110,10 +52,6 @@ html {
 .prose pre {
   @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
 }
-
-/* .prose pre {
-  @apply from-ctp-mantle to-ctp-crust border-ctp-overlay0 dark:bg-neutral-900 rounded-lg overflow-x-auto border dark:border-neutral-900 py-2 px-3 text-sm;
-} */
 
 .prose code {
   @apply px-1 py-0.5 rounded-lg;

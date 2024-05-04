@@ -14,7 +14,6 @@
     "date-fns": "^3.6.0",
     "geist": "^1.3.0",
     "gray-matter": "^4.0.3",
-    "lucide-react": "^0.377.0",
     "next": "14.2.3",
     "next-mdx-remote": "^4.4.1",
     "react": "^18",
