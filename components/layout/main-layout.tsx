@@ -1,9 +1,11 @@
 import { cn } from '@/lib/utils'
 import NavBar from '@/components/layout/navbar'
+import Footer from '@/components/layout/footer'
 
 type Props = {
   children?: React.ReactNode
 }
+
 
 const MainLayout = ({ children }: Props) => {
   return (
@@ -18,6 +20,7 @@ const MainLayout = ({ children }: Props) => {
           )}>
           <NavBar />
           {children}
+          <Footer />
         </div>
       </div>
     </>

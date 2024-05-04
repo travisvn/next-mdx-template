@@ -2,6 +2,7 @@ import { postUrl } from '@/config/site'
 import { formatDate, getBlogPosts } from '@/utils/mdx-utils'
 import Link from 'next/link'
 
+
 const BlogPosts = () => {
   let allBlogs = getBlogPosts()
 
