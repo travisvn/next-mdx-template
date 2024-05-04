@@ -49,7 +49,7 @@ function RoundedImage(props) {
   return <Image alt={props.alt} className="rounded-lg" {...props} />
 }
 
-function CodeSugarHigh({ children, ...props }) {
+function Code({ children, ...props }) {
   let codeHTML = highlight(children)
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
 }
@@ -96,7 +96,7 @@ let components = {
   h6: createHeading(6),
   Image: RoundedImage,
   a: CustomLink,
-  code: CodeSugarHigh,
+  code: Code,
   Table,
   TestComponent: TestComponent,
 }

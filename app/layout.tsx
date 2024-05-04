@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { siteConfig } from '@/config/site'
+import MainLayout from '@/components/layout/main-layout'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -58,7 +59,9 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        {children}
+        <MainLayout>
+          {children}
+        </MainLayout>
       </body>
     </html>
   )

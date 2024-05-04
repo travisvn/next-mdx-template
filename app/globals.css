@@ -107,13 +107,13 @@ html {
   @apply visible;
 }
 
-/* .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
-} */
-
 .prose pre {
-  @apply from-ctp-mantle to-ctp-crust border-ctp-overlay0 dark:bg-neutral-900 rounded-lg overflow-x-auto border dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
 }
+
+/* .prose pre {
+  @apply from-ctp-mantle to-ctp-crust border-ctp-overlay0 dark:bg-neutral-900 rounded-lg overflow-x-auto border dark:border-neutral-900 py-2 px-3 text-sm;
+} */
 
 .prose code {
   @apply px-1 py-0.5 rounded-lg;

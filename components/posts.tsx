@@ -1,7 +1,7 @@
 import { formatDate, getBlogPosts } from '@/utils/mdx-utils'
 import Link from 'next/link'
 
-export function BlogPosts() {
+const BlogPosts = () => {
   let allBlogs = getBlogPosts()
 
   return (
@@ -34,3 +34,5 @@ export function BlogPosts() {
     </div>
   )
 }
+
+export default BlogPosts

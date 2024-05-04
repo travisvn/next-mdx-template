@@ -1,3 +1,26 @@
+# Next.js MDX Template
+subtitle
+
+## Features
+- :white_check_mark: ✅ `next-mdx-remote` 
+- :white_check_mark: ✅ RSS Feed
+- :white_check_mark: ✅ Sitemap generation
+
+## Config
+- `config/site.ts` 
+- `.env` to set `BASE_URL` if you'd like to override the base URL you set in `config/site.ts`
+
+## Structure
+- `` placeholder
+
+### To-do
+- [ ] Test
+
+
+___
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { CustomMDX } from '@/components/mdx'
 import { formatDate, getBlogPosts } from '@/utils/mdx-utils'
-import { siteConfig } from '@/config/site'
+import { postUrl, siteConfig } from '@/config/site'
 
 import { unstable_noStore as noStore } from 'next/cache'
 
@@ -39,7 +39,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `${siteConfig.baseUrl}/blog/${post.slug}`,
+      url: `${siteConfig.baseUrl}/${postUrl}/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -78,7 +78,7 @@ export default function Blog({ params }) {
             image: post.metadata.image
               ? `${siteConfig.baseUrl}${post.metadata.image}`
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-            url: `${siteConfig.baseUrl}/blog/${post.slug}`,
+            url: `${siteConfig.baseUrl}/${postUrl}/${post.slug}`,
             author: {
               '@type': 'Person',
               name: 'My Portfolio',

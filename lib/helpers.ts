@@ -8,19 +8,6 @@ import { markdownDirectory } from '@/config/site'
 const postsDirectory = join(process.cwd(), markdownDirectory)
 const authorsDirectory = join(process.cwd(), '_authors')
 
-/**
- * 
- * TO-DO:
- *  - Function to generate 'archive' — time organized posts 
- * 
- *  - Functionality for "related articles" (how to accomplish this?)
- * 
- *  - Modifications to make a content-based site?
- *    - (eventually) Look into CMS options
- * 
- * 
- */
-
 export function getPostSlugs(): string[] {
   const postFiles = fs.readdirSync(postsDirectory)
   const slugs = postFiles.map((dirtySlug) => dirtySlug.replace(/\.mdx$/, ''))
@@ -139,6 +126,11 @@ export function filterHeadliner(
     }
   })
 }
+
+/**
+ * Authors section has not been implemented in this template, but these functions are available 
+ *  should one be interested in getting started.
+*/
 
 export function getAllAuthors() {
   const authorsDirectory = join(process.cwd(), '_authors')
