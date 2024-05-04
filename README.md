@@ -1,9 +1,9 @@
 # Next.js MDX Template
-Using Next.js 14 App Directory
 
 Simple, easy-to-modify template to use for creating a blog, portfolio, or content-based website
 
 ## Features
+- :white_check_mark: Next.js 14 App Directory
 - :white_check_mark: `next-mdx-remote` 
 - :white_check_mark: RSS Feed
 - :white_check_mark: Sitemap generation
@@ -11,6 +11,8 @@ Simple, easy-to-modify template to use for creating a blog, portfolio, or conten
 - Syntax highlighting in `.mdx`
 - Custom components embeddable in `.mdx` files
 - Utility functions to customize further
+
+[View live demo](https://next-mdx-template.vercel.app/)
 
 ## Config
 - `config/site.ts` - Site title, description, and URL
