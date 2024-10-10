@@ -2,7 +2,6 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/travisvn/next-mdx-template?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/travisvn/next-mdx-template?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/travisvn/next-mdx-template?style=social)
 ![GitHub repo size](https://img.shields.io/github/repo-size/travisvn/next-mdx-template)
 ![GitHub language count](https://img.shields.io/github/languages/count/travisvn/next-mdx-template)
 ![GitHub top language](https://img.shields.io/github/languages/top/travisvn/next-mdx-template)
